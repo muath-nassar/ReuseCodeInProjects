@@ -59,10 +59,10 @@ abstract public class Validation {
     }
     
     public static boolean allUpperCAse(String text){
-        return text.equalsIgnoreCase(text.toUpperCase());
+        return text.equals(text.toUpperCase());
     }
     
      public static boolean allLowerCAse(String text){
-        return text.equalsIgnoreCase(text.toLowerCase());
+        return text.equals(text.toLowerCase());
     }
 }
