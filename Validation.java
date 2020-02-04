@@ -58,11 +58,20 @@ abstract public class Validation {
       return password.matches(regex);
     }
     
-    public static boolean allUpperCAse(String text){
+    public static boolean isAllUpperCAse(String text){
         return text.equals(text.toUpperCase());
     }
     
-     public static boolean allLowerCAse(String text){
+     public static boolean isAllLowerCAse(String text){
         return text.equals(text.toLowerCase());
+    }
+
+    public static boolean isNumaeric(String number){
+        try {
+            double newNumber = Double.parseDouble(number);
+        } catch (Exception e) {
+            return false;
+        }
+        return true;
     }
 }
